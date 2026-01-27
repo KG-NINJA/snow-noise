@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro TV Noise App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tv-container">
+        <div class="screen">
+            <div id="color-bars" class="channel hidden"></div>
+            <video id="camera-feed" class="channel hidden" autoplay playsinline muted></video>
+            <canvas id="noise-canvas" class="channel"></canvas>
+            <div class="overlay">CH <span id="channel-display">1</span></div>
+            <div class="scanlines"></div>
+        </div>
+        <div class="controls">
+            <button id="btn-switch" aria-label="Switch Channel">CHANNEL SWITCH</button>
+            <div class="knob"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
